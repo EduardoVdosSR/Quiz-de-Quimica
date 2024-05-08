@@ -2,20 +2,49 @@ html {
     font-size: 62.5%;
 }
 
-.perguntas {
+body {
+    height: 100vh;
+    background: url(../Images/fundo.jpg) center no-repeat;
+    background-size: cover;
+}
+
+.header {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 3.5rem;
 }
-.perguntas .pergunta{
-    width: 32.5rem;
-    margin-top: 2rem;
-    padding: 2.5rem ;
-    background-color: rgba(1, 14, 34, 1);
+
+.header h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 192%;
     color: white;
-    border: yellow 4px solid;
+}
+
+.header h1:hover {
+    color: black;
+    transition: 1.5s;
+}
+
+.header .perguntas {
+    width: 37.5%;
+    height: 8rem;
+    margin-top: 3rem;
+    padding: 2.5rem;
+    border: yellow .4rem solid;
+    background: rgba(1, 14, 34, 1) url(../Images/fundo-da-perguntas.png);
+}
+
+.header .perguntas h1 {
+    font-size: 3rem;
+    color: white;
+}
+
+.header .perguntas h1:hover {
+    transition: .8s;
+    color: olivedrab;
 }
 
 .respostas {
@@ -33,12 +62,19 @@ html {
 }
 
 .respostas div a {
-    padding: 1rem 2.5rem;
-    margin: 2.5rem;
-    background-image: url(../Images/images.jpg);
+    padding: 5rem;
+    width: 100%;
+    background: url(../Images/aço.jpg) no-repeat center;
+    background-size: cover;
+    font-size: 2rem;
 }
 
-.respostas .resposta-1{
+.respostas div a:hover {
+    box-shadow: 10px 5px 100px rgba( 0, 0, 0, 0.5);
+    transition: .3s;
+}
+
+.respostas .resposta-1 {
     grid-area: R1;
 }
 
